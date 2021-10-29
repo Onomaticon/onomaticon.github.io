@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="application-name" content="Ontomasticon">
+  <meta name="author" content="Ed Baker (https://ebaker.me.uk)">
+  <meta name="description" content="Simple ontology and glossary server.">
+  <title>Installing Ontomasticon</title>
+</head>
+<body>
+  <h1>Apache settings</h1>
+  <p>The following redirects are required for proper operation.</p>
+  <pre><code>
+    RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+  </code></pre>
+  
+
+</body>
+</html>
