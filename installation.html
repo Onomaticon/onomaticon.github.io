@@ -17,6 +17,7 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} !^/css/
     RewriteCond %{REQUEST_URI} !^/images/
+    RewriteCond %{REQUEST_URI} !^/inst/
     RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
   </code></pre>
   
